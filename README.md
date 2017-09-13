@@ -1,3 +1,8 @@
+### AMERO+
+Amero+ es la criptomoneda común latinoamericana, una criptomoneda anónima, descentralizada e independiente de políticas económicas y políticos de turno.
+
+Basada en la tecnología CryptoNote. Fork de Bytecoin utilizando Forknote.
+
 ### About
 Forknote is innovative way to create Cryptonote (https://cryptonote.org) based cryptotokens. It gives the users the ability to create cryptotokens just by creating a simple configuration file.
 
@@ -28,27 +33,27 @@ Use http://forknote.net to create configuration files.
 All fields supported:
 ```
 GENESIS_COINBASE_TX_HEX=     // REQUIRED. Use " ./forknoted --config-file PATH_TO_CONFIG --print-genesis-tx " to generate 
-CRYPTONOTE_NAME=my_coin
-p2p-bind-port=33669
-rpc-bind-port=33670
+CRYPTONOTE_NAME=ameroplus
+p2p-bind-port=23223
+rpc-bind-port=23224
 seed-node=127.0.0.1:33669    // format:  IP:PORT
 seed-node=127.0.0.2:33669    
 UPGRADE_HEIGHT_V2=1             // REQUIRED. Use 1 for new cryptotokens
 UPGRADE_HEIGHT_V3=2             // REQUIRED. Use 2 for new cryptotokens
-MONEY_SUPPLY=18446744073709551615
-EMISSION_SPEED_FACTOR=18
-GENESIS_BLOCK_REWARD=0           // premined coins. Default: 0
+MONEY_SUPPLY=78400000000000
+EMISSION_SPEED_FACTOR=21
+GENESIS_BLOCK_REWARD=7840000000000           // premined coins. 10%
 DIFFICULTY_TARGET=120
-CRYPTONOTE_DISPLAY_DECIMAL_POINT=12
+CRYPTONOTE_DISPLAY_DECIMAL_POINT=6
 DEFAULT_DUST_THRESHOLD=1000000
-MINIMUM_FEE=1000000
+MINIMUM_FEE=10
 CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW=10
 CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE=20000
-CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX=120
-BYTECOIN_NETWORK=b2889400-e6f5-b62d-8d37-8fa91779dc7e
+CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX=54
+BYTECOIN_NETWORK=
 P2P_STAT_TRUSTED_PUB_KEY=4d26c4df7f4ca7037950ad026f9ab36dd05d881952662992f2e4dcfcafbe57eb
-CHECKPOINT=10000:70d2531151529ac00bf875281e15f51324934bc85e5733dcd92e1ccb1a665ff8   // format: HEIGHT:BLOCK_ID
-CHECKPOINT=20000:80d2dd05d8819526629235722e15f5f9ab36dd05d881952662992f2e4dcfcafb
+CHECKPOINT=   // format: HEIGHT:BLOCK_ID
+CHECKPOINT=
 
 // simplewallet parameters
 wallet-rpc-bind-ip=127.0.0.1        // instead rpc-bind-ip
